@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapreduce-testing.iml" filepath="$PROJECT_DIR$/.idea/modules/mapreduce-testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapreduce-testing_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mapreduce-testing_main.iml" group="mapreduce-testing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapreduce-testing_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mapreduce-testing_test.iml" group="mapreduce-testing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resourceTest.iml" filepath="$PROJECT_DIR$/.idea/modules/resourceTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resourceTest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/resourceTest_main.iml" group="resourceTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resourceTest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/resourceTest_test.iml" group="resourceTest" />
+    </modules>
+  </component>
+</project>

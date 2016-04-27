@@ -1,0 +1,33 @@
+group 'org'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'WordCountPlus'
+    }
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile "org.apache.hadoop:hadoop-client:2.6.0"
+    compile "org.apache.hadoop:hadoop-common:2.6.0"
+    compile "org.apache.avro:avro:1.7.7"
+    compile "joda-time:joda-time:2.3"
+    //compile "org.resourceTest:resourceTest:1.0-SNAPSHOT"
+    compile project(':resourceTest')
+}

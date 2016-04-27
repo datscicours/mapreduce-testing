@@ -1,0 +1,3 @@
+rootProject.name = 'mapreduce-testing'
+include 'resourceTest'
+
